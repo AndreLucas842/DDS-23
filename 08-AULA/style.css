@@ -1,0 +1,181 @@
+/* importacacao de fontes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face{
+    src: url("./Dancing_Script/DancingScript-VariableFont_wght.ttf");
+    font-family: Playwriter;
+}
+
+/*usando a fonte importada pelo projeto*/
+p{
+    font-family: Playwriter;
+    color: darkblue;
+    font-size: 15px;
+
+}
+
+/*Usando a fonte importada*/
+h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+
+
+/*Estilizei por tag*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: aliceblue;
+    color: black;
+}
+
+/*Estilizei dois elementosao mesmo tempo*/
+h1,h2{
+    color: darkblue;
+}
+
+/*seletor de classe*/
+.bloco{
+    background-color: white;
+    border: 2px solid gray;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Pseudo classe */
+a{
+    color:orange;
+}
+
+a:link {
+    color: blue;
+}
+
+/*Estiliza links visitados*/
+a:visited{
+    color: purple;
+}
+
+/*Estiliza links quando o mouse passa por cima*/
+a:hover {
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/*Estiliza links quando é clicados*/
+a:active{
+    color: green;
+}
+
+/*Estiliza o botão quando o mouse passa por cima*/
+button:hover{
+    cursor: pointer;
+    color: aliceblue;
+}
+
+button:active{
+    transform:scaleX(1.2);
+    transform:scaleY(1.7);
+}
+
+/*Estiliza o input quando estou mexendo em unm especifico*/
+input:focus{
+    outline: none;
+    background-color: lightyellow;
+    border: 2px solid orange;
+}
+
+/*Estiliza o input quando é obrigatório*/
+input:required{
+    border: 2px solid red;
+}
+
+/*Estiliza o input valido*/
+input:valid{
+    background-color: lightgreen; ;
+}
+
+/*Estiliza o input invalido*/
+input:invalid{
+    background-color: lightcoral; ;
+}
+
+/*Estiliza o input maracado*/
+input:checked{
+    accent-color: green;
+}
+
+/*Estiliza o input desabilitador*/
+input:disabled{
+    background-color: #e5e7eb;
+    color: #6b7280;
+}
+
+/* Seleciona o primeiro filho */
+.lista-exmplo li:first-child{
+    font-weight: bold;
+    color: green;
+}
+
+/*  Seleciona o ultimo filho */
+.lista-exmplo li:last-child{
+    font-weight: bold;
+    color: red;
+}
+
+/* Seleciona algum filho */
+.lista-exmplo li:nth-child(3){
+    background-color: lightskyblue;
+    font-weight: bold;
+    color: #f3f3c7;
+}
+
+/*Seleciona o elemento vazio*/
+.caixa-vazia:empty{
+    width: 200px;
+    height: 60px;
+    background-color: lightgray;
+    border: red;
+
+}
+
+/*Pseudo elemento*/
+
+/* insere conteudo antes do elemento */
+h2::before{
+    content: "⭐ ";
+    color: gold;
+}
+
+/* insere conteudo depois do elemento */
+h2::after{
+    content: "✔️" ;
+    color: green;
+}
+
+/*Estiliza o texto dentro dos inputs*/
+input::placeholder{
+    color: gray;
+    font-style: italic;
+}
+/*Estiliza o texto selecionado pelo usuário*/
+::selection{
+    background-color: yellow;
+    color: green;
+    font-size: bold;
+} 
+
+/* Estiliza os marcadores de texto */
+.lista-maker li::marker{
+    color: red;
+    font-size: 20px;
+}
