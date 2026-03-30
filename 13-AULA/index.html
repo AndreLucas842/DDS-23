@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Impotação do meu bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body class="container bg-body-tertiary">
+
+    <!--Barra de navegacao do bootstrap-->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">C&G SOLUITIONS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Unidades
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Vitória</a></li>
+            <li><a class="dropdown-item" href="#">Vila Velha</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Cariacica</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Serra</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+
+    <main>
+        <h1>BEM VINDO AO BOOTSTRAP</h1>
+
+       
+        <div class="row g-3"> 
+        <!--col - diz que a div é coluna-->
+        <!--bg - controla o fundo da div-->
+        <!--p - padding-->
+        <!--text - cor do texto-->
+        <!--md - breakpoint de tamanho médio >=700px-->
+        <!--X1 - breakpoint de tamanho grande >=120px  -->
+            <div class="col col-12 col-md-6 col-xl-3 bg-success p-5 text-white">Coluna A</div>
+            <div class="col col-12 col-md-6 col-xl-3 bg-danger  px-5 text-dark">Coluna 2</div>
+            <div class="col col-12 col-md-6 col-xl-3 bg-info    py-4 text-danger">Coluna ômega</div>
+            <div class="col col-12 col-md-6 col-xl-3 bg-warning pb-3 text-success">Coluna Fim</div>
+        </div>
+
+        <!--Display flex com bootstrap-->
+        <h2 class="my-3">Display flex</h2>
+        <div class="d-flex flex-wrap flex-md-nowrap gap-2 justify-content-between align-items-center p-3">
+            <div class="p-2 bg-danger text-white rounded-3 fs-1"> OPÇÃO</div>
+            <div class="p-2 bg-warning text-white rounded-3 fs-1"> OPÇÃO</div>
+            <div class="p-2 bg-success text-white rounded-3 fs-1"> OPÇÃO</div>
+            <div class="p-2 bg-danger text-white rounded-3 fs-1"> OPÇÃO</div>
+            <div class="p-2 bg-warning text-white rounded-3 fs-1"> OPÇÃO</div>
+            <div class="p-2 bg-success text-white rounded-3 fs-1"> OPÇÃO</div>
+        </div>
+
+        <!-- GRUPO DE CARDS TOP-->
+
+        <div class="card-group">
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/3b/f0/b0/3bf0b0fa7376a4b5c8108435ce7a779d.jpg" class="card-img-top" alt="..." height="500">
+    <div class="card-body">
+      <h5 class="card-title">Arrascaeta</h5>
+      <p class="card-text">O melhor Uruguaio da História</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">Atualizado a 10 minutos</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://pbs.twimg.com/media/GOleofqX0AEIvlX.jpg" class="card-img-top" alt="..." height="500">
+    <div class="card-body">
+      <h5 class="card-title">Pep Guardiola</h5>
+      <p class="card-text">Maior técnico da História</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">Atualizado a 7 minutos</small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://s2-ge.glbimg.com/L06pG1aOkGlrRT0GwFpHP3p2bOA=/0x0:1639x2048/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/E/p/2lu6xRSUmgayFoG9Lrug/messimvp.jpg" class="card-img-top" alt="..." height="500">
+    <div class="card-body">
+      <h5 class="card-title">Messi</h5>
+      <p class="card-text">O melhor de todos</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-body-secondary">Atualizado a 5 minutos</small>
+    </div>
+  </div>
+</div>
+
+        <!--Display grid com bootstrap-->
+        <h2 class="my-3">Display grid</h2>
+        <div class="d-grid gap-5">
+            <div class="p-2 bg-danger text-white rounded-3 fs-1">OPCAO</div>
+            <div class="p-2 bg-warning text-white rounded-3 fs-1">OPCAO</div>
+            <div class="p-2 bg-success text-white rounded-3 fs-1">OPCAO</div>
+            
+
+        </div>
+
+    </main>
+
+    <footer></footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</body>
+</html>
